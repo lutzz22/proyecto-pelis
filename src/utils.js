@@ -1,0 +1,1 @@
+const BASE_URL = 'https://api.themoviedb.org/3/movie/popular?api_key=cbeecd2ae348f85de2e35e5d7928ab42'

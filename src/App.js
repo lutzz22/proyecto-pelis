@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Home from './pages/home/Home';
 
 function App() {
   return (
     <div >
-     <p> proyecto pelis</p>
+      <Navbar />
+      <Home/>
     </div>
   );
 }
