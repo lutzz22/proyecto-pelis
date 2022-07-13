@@ -15,8 +15,6 @@ export const Context = createContext(null)
         useEffect(() => {
             getMovies()
         }, [])
-
-        console.log(peliculas)
         return(
             <Context.Provider value={{peliculas, setPeliculas}} > 
             {children} 

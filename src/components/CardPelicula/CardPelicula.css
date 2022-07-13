@@ -1,0 +1,23 @@
+h5 {
+    height: 50px;
+}
+
+.card img {
+    height: 100%;
+}
+
+.info {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.info:hover {
+    color: red;
+    border-style: none;
+}
+
+.cora{
+    margin-right: 5px;
+}
+
+
