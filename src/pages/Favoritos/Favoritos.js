@@ -3,11 +3,6 @@ import "../Favoritos/Favoritos.css"
 
 export const Favoritos = () => {
 
-  const [fav, setFav] = useState([])
-
-  const listaFav = () => {
-    
-  }
 
   return (
     <>

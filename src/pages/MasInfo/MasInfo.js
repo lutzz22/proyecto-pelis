@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import '../MasInfo/style.css'
 
 
@@ -27,6 +27,7 @@ const MasInfo = () => {
                     <p>{info.overview}</p>
                     <p>Estreno : {info.release_date}</p>
                     <p>Calificacion : {info.vote_average} ☆</p>
+                    <Link to='/peliculas'><button>volver</button></Link>
                 </div>
             </div>
         </div>

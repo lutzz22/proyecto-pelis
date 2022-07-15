@@ -12,11 +12,16 @@ export const Context = createContext(null)
 
         const [peliculas, setPeliculas] = useState([])
 
+        const addFavoritos = () => {
+            console.log ('add fav')
+        }
+
         useEffect(() => {
             getMovies()
         }, [])
+
         return(
-            <Context.Provider value={{peliculas, setPeliculas}} > 
+            <Context.Provider value={{peliculas, setPeliculas,addFavoritos,}} > 
             {children} 
             </Context.Provider>
         )

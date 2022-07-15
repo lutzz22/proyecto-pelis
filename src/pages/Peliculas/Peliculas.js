@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { useEffect, useState } from "react";
 import { Context } from '../../store/AppContext';
 import CardPelicula from '../../components/CardPelicula';
 import "../Peliculas/Peliculas.css"
