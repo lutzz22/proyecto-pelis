@@ -12,7 +12,7 @@ const CardFav = (props) => {
             <img src={`https://image.tmdb.org/t/p/w500/${backdrop_path}`} className="card-img-top" alt="Poster" />
             <div className="card-body">
                 <h5 className="card-title" style={{fontSize: "large"}}>{title}</h5>
-                <a href="#"  onClick={()=> deleteFavoritos(id)}><i className="cora bi bi-suit-heart"></i></a> <a style={{fontSize: "small"}}>Calificación: {vote_average}</a>
+                <a href="#"  onClick={()=> deleteFavoritos(id)}><i className="cora bi bi-suit-heart-fill"></i></a> <a style={{fontSize: "small"}}>Calificación: {vote_average}</a>
                 <Link className='info' to={`/${id}`}> + info  </Link>
             </div>
             </div>
