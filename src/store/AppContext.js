@@ -11,17 +11,34 @@ export const Context = createContext(null)
         }
 
         const [peliculas, setPeliculas] = useState([])
+        const [favs, setFavs] = useState([])
 
-        const addFavoritos = () => {
-            console.log ('add fav')
+        const addFavoritos = (movie) => {
+            const peliculaFavorita = favs.find(f => f.id===movie.id)
+            if(peliculaFavorita){
+                alert('la ya esta en tu lista')
+                setFavs([...favs])
+            }else{
+                setFavs([...favs, {...movie}])
+                setContador(contador + 1)
+            }
         }
+
+        const deleteFavoritos = (id) => {
+            setContador(contador - 1)
+            return setFavs(favs.filter((fa) => fa.id !== id))
+        }
+
+        const [contador, setContador] = useState(0)
+
+
 
         useEffect(() => {
             getMovies()
         }, [])
 
         return(
-            <Context.Provider value={{peliculas, setPeliculas,addFavoritos,}} > 
+            <Context.Provider value={{peliculas, setPeliculas,addFavoritos, favs, setFavs, deleteFavoritos, contador, setContador}} > 
             {children} 
             </Context.Provider>
         )

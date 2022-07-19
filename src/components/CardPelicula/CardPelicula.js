@@ -6,7 +6,7 @@ import "./CardPelicula.css"
 
 const CardPelicula = (props) => {
   const {addFavoritos} = useContext(Context)
-  const {id, backdrop_path, title, vote_average} = props;
+  const {id, backdrop_path, title, vote_average, movie} = props;
   
   return (
     <div>
@@ -14,7 +14,7 @@ const CardPelicula = (props) => {
           <img src={`https://image.tmdb.org/t/p/w500/${backdrop_path}`} className="card-img-top" alt="Poster" />
           <div className="card-body">
               <h5 className="card-title" style={{fontSize: "large"}}>{title}</h5>
-              <a href="#"  onClick={addFavoritos()}><i className="cora bi bi-suit-heart"></i></a> <a style={{fontSize: "small"}}>Calificación: {vote_average}</a>
+              <a href="#"  onClick={()=> addFavoritos(movie)}><i className="cora bi bi-suit-heart"></i></a> <a style={{fontSize: "small"}}>Calificación: {vote_average}</a>
               <Link className='info' to={`/${id}`}> + info  </Link>
           </div>
         </div>

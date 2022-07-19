@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from "react-router-dom";
+import { Context } from '../../store/AppContext';
 import "../Navbar/style.css"
 const Navbar = () => {
+  
+const {contador} = useContext(Context)
+
   return (
     <>
      <nav className="navbar navbar-expand-lg bg-dark">
@@ -20,7 +24,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                     <li className="nav-item">
-                    <Link className="nav-link bi bi-heart-fill link-light" to="/Favoritos"></Link>
+                    <Link className="nav-link bi bi-heart-fill link-light" to="/Favoritos">{contador}</Link>
                     </li>
                 </div>
             </div>

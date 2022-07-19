@@ -16,7 +16,7 @@ const Home = () => {
         <div className='d-flex flex-wrap justify-content-between'>
             {
             peliculas.map(pelicula => (
-                <CardPelicula key={pelicula.id} {...pelicula} />
+                <CardPelicula key={pelicula.id} {...pelicula} movie={pelicula} />
             ))
             }
         </div>    
