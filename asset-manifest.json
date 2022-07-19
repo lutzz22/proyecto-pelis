@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/proyecto-pelis/static/css/main.8038c68a.css",
+    "main.js": "/proyecto-pelis/static/js/main.ae6e7b47.js",
+    "static/js/787.5fbe92dc.chunk.js": "/proyecto-pelis/static/js/787.5fbe92dc.chunk.js",
+    "index.html": "/proyecto-pelis/index.html",
+    "main.8038c68a.css.map": "/proyecto-pelis/static/css/main.8038c68a.css.map",
+    "main.ae6e7b47.js.map": "/proyecto-pelis/static/js/main.ae6e7b47.js.map",
+    "787.5fbe92dc.chunk.js.map": "/proyecto-pelis/static/js/787.5fbe92dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8038c68a.css",
+    "static/js/main.ae6e7b47.js"
+  ]
+}
