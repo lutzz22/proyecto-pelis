@@ -12,7 +12,7 @@ function App() {
       <Router>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />}></Route>
+        <Route path='/proyecto-pelis' element={<Home />}></Route>
         <Route path='/Peliculas' element={<Peliculas />}></Route>
         <Route path='/Favoritos' element={<Favoritos />}></Route>
         <Route path='/:id' element={<MasInfo />}></Route>

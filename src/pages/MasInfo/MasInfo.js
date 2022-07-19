@@ -4,7 +4,8 @@ import { Link, useParams } from 'react-router-dom';
 import '../MasInfo/style.css'
 
 
-const MasInfo = () => {
+const MasInfo = (props) => {
+    
     const [info, setInfo] = useState([])
 
     const {id} = useParams()
