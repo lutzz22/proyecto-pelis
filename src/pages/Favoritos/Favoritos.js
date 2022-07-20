@@ -10,7 +10,7 @@ export const Favoritos = () => {
     <>
     <div className='container'>
       <h1>Películas Favoritas</h1>
-      <div className='d-flex justify-content-center'>
+      <div className='d-flex flex-wrap justify-content-center'>
         {
         favs.map(pelicula => (
         <CardFavs key={pelicula.id} {...pelicula} />
